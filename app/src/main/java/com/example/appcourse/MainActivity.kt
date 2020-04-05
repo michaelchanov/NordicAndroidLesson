@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
         repeat(10){
 
         }
+        println("Txt")
     }
 
     fun anotherImportantFeature(){
