@@ -4,13 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.FragmentManager
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_one.*
 
 class MainActivity : AppCompatActivity() {
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_main)
-
             val fragmentOne = FirstFragment()
             val fragmentTwo = SecondFragment()
 
@@ -41,4 +41,18 @@ class MainActivity : AppCompatActivity() {
 //                    .commit()
 //            }
         }
+
+    override fun onStop() {
+        super.onStop()
+        Log.i("Third fragment","Has been stopped")
+    }
+    fun someVeryImportantFeature(){
+        repeat(10){
+
+        }
+    }
+
+    fun anotherImportantFeature(){
+
+    }
     }
